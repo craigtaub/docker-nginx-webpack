@@ -1,0 +1,5 @@
+/node_modules
+.dockerignore
+bundle.js
+notes.txt
+npm-debug.log
