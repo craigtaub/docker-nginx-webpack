@@ -11,5 +11,4 @@ WORKDIR /usr/src/app
 RUN npm install webpack-dev-server -g && \
  npm install
 
-EXPOSE 8080
 CMD [ "npm", "start" ]

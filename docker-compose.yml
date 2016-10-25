@@ -1,11 +1,17 @@
-web:
-  build: .
-  dockerfile: Dockerfile
-  ports:
-  - 8080:8080
-  volumes:
-  - .:/usr/src/app/:rw
-  environment:
-  - NODE_ENV=dev
-  # Before you run this file for the first time, make sure
-  # you remove node_modules/ folders in your host machine
+version: '2'
+
+services:
+  web:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+    - 8080:8080
+    expose:
+    - "8080"
+    volumes:
+    - .:/usr/src/app/:rw
+    environment:
+    - NODE_ENV=dev
+    # Before you run this file for the first time, make sure
+    # you remove node_modules/ folders in your host machine
