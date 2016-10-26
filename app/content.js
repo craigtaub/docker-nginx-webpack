@@ -1,1 +1,1 @@
-module.exports = "It works from content.js. new two.";
+module.exports = "It works from content.js. new three.";
