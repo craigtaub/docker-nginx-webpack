@@ -4,13 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --host 0.0.0.0"
+    "start": "echo 'running wrong start'"
   },
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "css-loader": "^0.25.0",
-    "style-loader": "^0.13.1",
-    "webpack": "^1.13.2"
-  }
+  "license": "ISC"
 }

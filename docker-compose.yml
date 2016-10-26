@@ -3,14 +3,14 @@ version: '2'
 services:
   web:
     build:
-      context: ./
+      context: ./app
       dockerfile: Dockerfile
     ports:
     - 8080:8080
     expose:
     - "8080"
     volumes:
-    - .:/usr/src/app/:rw
+    - ./app:/usr/src/app/:rw
     environment:
     - NODE_ENV=dev
     # Before you run this file for the first time, make sure
